@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مطعم الذواقة | قائمة الطعام</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="menu-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="deepseek_css_20250520_16d97b.css">
+<script src="deepseek_javascript_20250520_f6b511.js"></script>
+</head>
+<body>
+    <!-- شريط التنقل -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <img src="https://via.placeholder.com/150x50?text=مطعم+الذواقة" alt="مطعم الذواقة">
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="menu.html" class="active">قائمة الطعام</a></li>
+                    <li><a href="reservation.html">الحجوزات</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- قسم قائمة الطعام -->
+    <section class="menu-hero">
+        <div class="container">
+            <h1>قائمة الطعام</h1>
+            <p>استكشف تشكيلتنا المميزة من الأطباق الشهية</p>
+        </div>
+    </section>
+
+    <!-- تصنيفات القائمة -->
+    <section class="menu-categories">
+        <div class="container">
+            <div class="category-tabs">
+                <button class="tab-btn active" data-category="all">الكل</button>
+                <button class="tab-btn" data-category="starters">المقبلات</button>
+                <button class="tab-btn" data-category="main">الأطباق الرئيسية</button>
+                <button class="tab-btn" data-category="grills">المشويات</button>
+                <button class="tab-btn" data-category="salads">السلطات</button>
+                <button class="tab-btn" data-category="desserts">الحلويات</button>
+                <button class="tab-btn" data-category="drinks">المشروبات</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- قائمة الطعام -->
+    <section class="food-menu">
+        <div class="container">
+            <!-- قسم المقبلات -->
+            <div class="menu-section" id="starters">
+                <h2 class="section-title">المقبلات</h2>
+                <div class="menu-items">
+                    <div class="menu-item" data-category="starters">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="سبرينغ رول">
+                            <span class="item-badge">الأكثر طلباً</span>
+                        </div>
+                        <div class="item-details">
+                            <h3>سبرينغ رول</h3>
+                            <p>6 قطع من السبرينغ رول المقرمش مع حشوة الخضار والجمبري</p>
+                            <div class="item-price">28 ر.س</div>
+                            <button class="add-to-cart">إضافة إلى السلة</button>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="starters">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1603105037880-880cd4edfb0d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="سمبوسة">
+                        </div>
+                        <div class="item-details">
+                            <h3>سمبوسة لحم</h3>
+                            <p>8 قطع سمبوسة محشوة باللحم المتبل مع البهارات الخاصة</p>
+                            <div class="item-price">25 ر.س</div>
+                            <button class="add-to-cart">إضافة إلى السلة</button>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="starters">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="باستا">
+                            <span class="item-badge">جديد</span>
+                        </div>
+                        <div class="item-details">
+                            <h3>باستا بالكريمة</h3>
+                            <p>باستا مع صلصة كريمة الفطر والجبنة والثوم</p>
+                            <div class="item-price">32 ر.س</div>
+                            <button class="add-to-cart">إضافة إلى السلة</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- قسم الأطباق الرئيسية -->
+            <div class="menu-section" id="main">
+                <h2 class="section-title">الأطباق الرئيسية</h2>
+                <div class="menu-items">
+                    <div class="menu-item" data-category="main">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80" alt="برياني دجاج">
+                        </div>
+                        <div class="item-details">
+                            <h3>برياني دجاج</h3>
+                            <p>أرز برياني مع قطع دجاج طري ومتبل مع الخضار والبهارات الخاصة</p>
+                            <div class="item-price">45 ر.س</div>
+                            <button class="add-to-cart">إضافة إلى السلة</button>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="main">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=699&q=80" alt="تشيز برجر">
+                            <span class="item-badge">الأكثر طلباً</span>
+                        </div>
+                        <div class="item-details">
+                            <h3>تشيز برجر</h3>
+                            <p>برجر لحم بقري مع جبنة شيدر، خس، طماطم، بصل وصلصة خاصة</p>
+                            <div class="item-price">35 ر.س</div>
+                            <button class="add-to-cart">إضافة إلى السلة</button>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="main">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1498&q=80" alt="بيتزا">
+                        </div>
+                        <div class="item-details">
+                            <h3>بيتزا بيتي</h3>
+                            <p>بيتزا بصلصة الطماطم وجبنة الموزاريلا مع لحم مقدد وفطر</p>
+                            <div class="item-price">50 ر.س</div>
+                            <button class="add-to-cart">إضافة إلى السلة</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- قسم المشويات -->
+            <div class="menu-section" id="grills">
+                <h2 class="section-title">المشويات</h2>
+                <div class="menu-items">
+                    <div class="menu-item" data-category="grills">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1603360946369-dc9bb6258143?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80" alt="ستيك لحم">
+                            <span class="item-badge">جديد</span>
+                        </div>
+                        <div class="item-details">
+                            <h3>ستيك لحم</h3>
+                            <p>ستيك لحم مشوي بدرجة متوسطة مع صلصة الفطر والبطاطس المشوية</p>
+                            <div class="item-price">75 ر.س</div>
+                            <button class="add-to-cart">إضافة إلى السلة</button>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="grills">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" alt="دجاج مشوي">
+                        </div>
+                        <div class="item-details">
+                            <h3>دجاج مشوي</h3>
+                            <p>فخذ دجاج مشوي مع البهارات الخاصة والليمون والثوم</p>
+                            <div class="item-price">55 ر.س</div>
+                            <button class="add-to-cart">إضافة إلى السلة</button>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="grills">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1473&q=80" alt="كباب">
+                        </div>
+                        <div class="item-details">
+                            <h3>كباب مشوي</h3>
+                            <p>6 قطع كباب مشوي مع الأرز البسمتي والخضار المشوية</p>
+                            <div class="item-price">60 ر.س</div>
+                            <button class="add-to-cart">إضافة إلى السلة</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- قسم السلطات -->
+            <div class="menu-section" id="salads">
+                <h2 class="section-title">السلطات</h2>
+                <div class="menu-items">
+                    <div class="menu-item" data-category="salads">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80" alt="سلطة يونانية">
+                        </div>
+                        <div class="item-details">
+                            <h3>سلطة يونانية</h3>
+                            <p>طماطم طازجة، خيار، بصل أحمر، زيتون، جبنة فيتا مع صلصة الليمون والزيتون</p>
+                            <div class="item-price">25 ر.س</div>
+                            <button class="add-to-cart">إضافة إلى السلة</button>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="salads">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="سلطة سيزر">
+                            <span class="item-badge">الأكثر طلباً</span>
+                        </div>
+                        <div class="item-details">
+                            <h3>سلطة سيزر</h3>
+                            <p>خس روماني، كروتونات، جبنة بارميزان مع صلصة سيزر الكلاسيكية</p>
+                            <div class="item-price">30 ر.س</div>
+                            <button class="add-to-cart">إضافة إلى السلة</button>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="salads">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1546793665-c74683f339c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="سلطة فواكه">
+                        </div>
+                        <div class="item-details">
+                            <h3>سلطة فواكه</h3>
+                            <p>مزيج من الفواكه الطازجة الموسمية مع عصير البرتقال والنعناع</p>
+                            <div class="item-price">22 ر.س</div>
+                            <button class="add-to-cart">إضافة إلى السلة</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- قسم الحلويات -->
+            <div class="menu-section" id="desserts">
+                <h2 class="section-title">الحلويات</h2>
+                <div class="menu-items">
+                    <div class="menu-item" data-category="desserts">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="تشيز كيك">
+                        </div>
+                        <div class="item-details">
+                            <h3>تشيز كيك</h3>
+                            <p>تشيز كيك كلاسيكي مع طبقة من التوت الطازج وصلصة الكراميل</p>
+                            <div class="item-price">30 ر.س</div>
+                            <button class="add-to-cart">إضافة إلى السلة</button>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="desserts">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1562440499-64c9a111f713?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="موس الشوكولاتة">
+                            <span class="item-badge">الأكثر طلباً</span>
+                        </div>
+                        <div class="item-details">
+                            <h3>موس الشوكولاتة</h3>
+                            <p>موس شوكولاتة بلجيكية مع كريمة مخفوقة وقطع شوكولاتة</p>
+                            <div class="item-price">28 ر.س</div>
+                            <button class="add-to-cart">إضافة إلى السلة</button>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="desserts">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1557&q=80" alt="آيس كريم">
+                        </div>
+                        <div class="item-details">
+                            <h3>آيس كريم</h3>
+                            <p>3 كرات آيس كريم من النكهات المفضلة لديك مع toppings حسب الرغبة</p>
+                            <div class="item-price">25 ر.س</div>
+                            <button class="add-to-cart">إضافة إلى السلة</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- قسم المشروبات -->
+            <div class="menu-section" id="drinks">
+                <h2 class="section-title">المشروبات</h2>
+                <div class="menu-items">
+                    <div class="menu-item" data-category="drinks">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1603569283847-aa295f0d016a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80" alt="مشروب المانجو">
+                        </div>
+                        <div class="item-details">
+                            <h3>مشروب المانجو</h3>
+                            <p>عصير مانجو طازج مع قطع مانجو ومكعبات ثلج</p>
+                            <div class="item-price">18 ر.س</div>
+                            <button class="add-to-cart">إضافة إلى السلة</button>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="drinks">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1596075789660-846328943b9b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="قهوة مثلجة">
+                            <span class="item-badge">الأكثر طلباً</span>
+                        </div>
+                        <div class="item-details">
+                            <h3>قهوة مثلجة</h3>
+                            <p>قهوة إسبريسو مثلجة مع الحليب والمبيض والسكر حسب الرغبة</p>
+                            <div class="item-price">22 ر.س</div>
+                            <button class="add-to-cart">إضافة إلى السلة</button>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="drinks">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1557&q=80" alt="ميلك شيك">
+                        </div>
+                        <div class="item-details">
+                            <h3>ميلك شيك</h3>
+                            <p>ميلك شيك بالشوكولاتة أو الفراولة أو الفانيلا مع كريمة وتوبينغ</p>
+                            <div class="item-price">20 ر.س</div>
+                            <button class="add-to-cart">إضافة إلى السلة</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- سلة التسوق -->
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h3>سلة التسوق</h3>
+            <button class="close-cart">&times;</button>
+        </div>
+        <div class="cart-items">
+            <!-- سيتم ملؤها بواسطة JavaScript -->
+        </div>
+        <div class="cart-total">
+            <span>المجموع:</span>
+            <span class="total-price">0 ر.س</span>
+        </div>
+        <button class="checkout-btn">إتمام الطلب</button>
+    </div>
+    <div class="cart-overlay"></div>
+
+    <!-- زر سلة التسوق -->
+    <div class="cart-btn">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count">0</span>
+    </div>
+
+    <!-- تذييل الصفحة -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>مطعم الذواقة</h3>
+                    <p>وجهتك المفضلة لتجربة طعام استثنائية في أجواء راقية وخدمة مميزة.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="menu.html">قائمة الطعام</a></li>
+                        <li><a href="reservation.html">الحجوزات</a></li>
+                        <li><a href="contact.html">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>تواصل معنا</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 شارع المطاعم، المدينة</p>
+                    <p><i class="fas fa-phone"></i> +966 12 345 6789</p>
+                    <p><i class="fas fa-envelope"></i> info@al-thawqa.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 مطعم الذواقة. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="menu-script.js"></script>
+</body>
+</html>
